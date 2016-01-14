@@ -1,0 +1,32 @@
+/*=auto=========================================================================
+
+ Portions (c) Copyright 2005 Brigham and Women's Hospital (BWH)
+ All Rights Reserved.
+
+ See COPYRIGHT.txt
+ or http://www.SRPlan.org/copyright/copyright.txt for details.
+
+ Program:   3D SRPlan
+
+=========================================================================auto=*/
+
+#ifndef __vtkSRPlanVersionConfigure_h
+#define __vtkSRPlanVersionConfigure_h
+
+#define SRPlan_VERSION_MAJOR @SRPlan_VERSION_MAJOR@
+#define SRPlan_VERSION_MINOR @SRPlan_VERSION_MINOR@
+#define SRPlan_VERSION_PATCH @SRPlan_VERSION_PATCH@
+#define SRPlan_VERSION "@SRPlan_VERSION@"
+#define SRPlan_VERSION_FULL "@SRPlan_VERSION_FULL@"
+
+#define SRPlan_OS_LINUX_NAME "@SRPlan_OS_LINUX_NAME@"
+#define SRPlan_OS_MAC_NAME "@SRPlan_OS_MAC_NAME@"
+#define SRPlan_OS_WIN_NAME "@SRPlan_OS_WIN_NAME@"
+
+#define SRPlan_ARCHITECTURE "@SRPlan_ARCHITECTURE@"
+#define SRPlan_OS "@SRPlan_OS@"
+#define SRPlan_BUILDDATE "@SRPlan_BUILDDATE@"
+#define SRPlan_WC_URL "@SRPlan_WC_URL@"
+#define SRPlan_WC_REVISION "@SRPlan_WC_REVISION@"
+
+#endif // __vtkSRPlanVersionConfigure_h
