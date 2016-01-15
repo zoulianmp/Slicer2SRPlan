@@ -108,7 +108,7 @@ int SlicerAppMain(int argc, char* argv[])
 
   // Allow a custom appliction name so that the settings
   // can be distinct for differently named applications
-  QString applicationName("Slicer");
+  QString applicationName("SRPlan");
   if (argv[0])
     {
     std::string name = vtksys::SystemTools::GetFilenameWithoutExtension(argv[0]);

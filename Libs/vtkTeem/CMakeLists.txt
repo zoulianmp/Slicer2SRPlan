@@ -139,9 +139,7 @@ if(NOT "${${PROJECT_NAME}_FOLDER}" STREQUAL "")
 endif()
 
 
-set_target_properties(${lib_name} PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${SRPlan_BINARY_DIR})
 
-message("${SRPlan_BINARY_DIR}" ${SRPlan_BINARY_DIR})
 # --------------------------------------------------------------------------
 # Export target
 # --------------------------------------------------------------------------
