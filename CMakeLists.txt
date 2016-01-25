@@ -6,7 +6,7 @@ cmake_policy(SET CMP0048 NEW)
 
 #-----------------------------------------------------------------------------
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/CMake" 
-                       ${CMAKE_CURRENT_SOURCE_DIR}/CMake/CTK-CMake
+                  
 					   ${CMAKE_MODULE_PATH})
 
 
@@ -112,6 +112,8 @@ set(SRPlan_BINARY_DIR "${CMAKE_CURRENT_BINARY_DIR}")
 #-----------------------------------------------------------------------------
 #option(SRPlan_INSTALL_DEVELOPMENT "Install SRPlan extension development files." OFF)
 #mark_as_advanced(SRPlan_INSTALL_DEVELOPMENT)
+
+
 set(SRPlan_INSTALL_DEVELOPMENT OFF)
 if(NOT SRPlan_INSTALL_DEVELOPMENT)
   set(SRPlan_INSTALL_NO_DEVELOPMENT 1)

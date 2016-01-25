@@ -205,7 +205,7 @@ void qSlicerCoreApplicationPrivate::init()
   this->parseArguments();
 
   this->SlicerHome = this->discoverSlicerHomeDirectory();
-  this->setEnvironmentVariable("SLICER_HOME", this->SlicerHome);
+  this->setEnvironmentVariable("SRPlan_HOME", this->SlicerHome);
 
 #ifdef SRPlan_USE_PYTHONQT_WITH_OPENSSL
   if (!QSslSocket::supportsSsl())
@@ -408,7 +408,7 @@ QString qSlicerCoreApplicationPrivate::discoverSlicerHomeDirectory()
   // to set SLICER_HOME. If not, the current directory associated with that
   // executable will be considered and initialization code expecting SLICER_HOME
   // to be properly set will fail.
-  QString slicerHome = this->Environment.value("SLICER_HOME");
+  QString slicerHome = this->Environment.value("SRPlan_HOME");
   if (slicerHome.isEmpty())
     {
     QString slicerBin = this->discoverSlicerBinDirectory();

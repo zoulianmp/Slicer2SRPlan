@@ -85,7 +85,8 @@ void qSlicerApplicationHelper::setupModuleFactoryManager(qSlicerModuleFactoryMan
         !options->disableBuiltInLoadableModules() &&
         !options->runPythonAndExit())
       {
-      QString loadablePath = app->slicerHome() + "/" + SRPlan_QTLOADABLEMODULES_LIB_DIR + "/";
+    //  QString loadablePath = app->slicerHome() + "/" + SRPlan_QTLOADABLEMODULES_LIB_DIR + "/";
+	  QString loadablePath = app->slicerHome() + SRPlan_QTLOADABLEMODULES_LIB_DIR + "/";
       moduleFactoryManager->addSearchPath(loadablePath);
       // On Win32, *both* paths have to be there, since scripts are installed
       // in the install location, and exec/libs are *automatically* installed

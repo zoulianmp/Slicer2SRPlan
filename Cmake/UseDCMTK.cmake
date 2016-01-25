@@ -11,7 +11,7 @@ endif()
 set(DCMTK_USE_FILE_INCLUDED 1)
 
 
-
+message("After DCMTK USE File  ")
 
 set(PACKAGE_PREFIX_DIR "C:/BaseLibsDebug/DCMTK")
 
@@ -74,6 +74,8 @@ SET_AND_CHECK(DCMTK_dcmfg_INCLUDE_DIR "${PACKAGE_PREFIX_DIR}/include/dcmtk/dcmfg
 SET_AND_CHECK(DCMTK_dcmseg_INCLUDE_DIR "${PACKAGE_PREFIX_DIR}/include/dcmtk/dcmseg")
 
 SET_AND_CHECK(DCMTK_TARGETS "${PACKAGE_PREFIX_DIR}/cmake/DCMTKTargets.cmake")
+
+message("DCMTK_config_INCLUDE_DIR: ${DCMTK_config_INCLUDE_DIR}")
 
 SET(DCMTK_INCLUDE_DIRS "")
 FOREACH(module config ${DCMTK_MODULES})

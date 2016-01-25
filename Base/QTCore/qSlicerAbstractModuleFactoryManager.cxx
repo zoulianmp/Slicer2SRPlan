@@ -283,6 +283,7 @@ void qSlicerAbstractModuleFactoryManager::registerModule(const QFileInfo& file)
       {
       qDebug() << " checking file: " << file.absoluteFilePath() << " as a " << typeid(*factory).name();
       }
+
     if (!factory->isValidFile(file))
       {
       continue;

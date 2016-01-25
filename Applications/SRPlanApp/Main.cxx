@@ -158,6 +158,7 @@ int SlicerAppMain(int argc, char* argv[])
 
   qSlicerModuleManager * moduleManager = qSlicerApplication::application()->moduleManager();
   qSlicerModuleFactoryManager * moduleFactoryManager = moduleManager->factoryManager();
+
   moduleFactoryManager->addSearchPaths(app.commandOptions()->additonalModulePaths());
   qSlicerApplicationHelper::setupModuleFactoryManager(moduleFactoryManager);
 

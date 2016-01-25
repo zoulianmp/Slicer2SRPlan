@@ -71,7 +71,7 @@ bool qSlicerUtils::isCLILoadableModule(const QString& filePath)
 bool qSlicerUtils::isLoadableModule(const QString& filePath)
 {
   // See http://stackoverflow.com/questions/899422/regular-expression-for-a-string-that-does-not-start-with-a-sequence
-  QRegExp regex("(libqSlicer.+Module\\.(so|dylib))|((?!lib)qSlicer.+Module\\.(dll|DLL))");
+  QRegExp regex("(libqSRPlan.+Module\\.(so|dylib))|((?!lib)qSRPlan.+Module\\.(dll|DLL))");
   return regex.exactMatch(QFileInfo(filePath).fileName());
 }
 
@@ -119,7 +119,7 @@ QString qSlicerUtils::extractModuleNameFromLibraryName(const QString& libraryNam
     }
 
   // Remove prefix 'qSlicer' if needed
-  if (moduleName.indexOf("qSlicer") == 0)
+  if (moduleName.indexOf("qSRPlan") == 0)
     {
     moduleName.remove(0, 7);
     }
@@ -147,7 +147,7 @@ QString qSlicerUtils::extractModuleNameFromClassName(const QString& className)
   QString moduleName(className);
 
   // Remove prefix 'qSlicer' if needed
-  if (moduleName.indexOf("qSlicer") == 0)
+  if (moduleName.indexOf("qSRPlan") == 0)
     {
     moduleName.remove(0, 7);
     }
