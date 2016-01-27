@@ -297,6 +297,9 @@ if(SRPlan_USE_PYTHONQT)
 
 endif(SRPlan_USE_PYTHONQT)
 
+message("IN BaseQTGUI,KIT_target_libraries: ${KIT_target_libraries}")
+
+
 SRPlanMacroBuildBaseQtLibrary(
   NAME ${PROJECT_NAME}
   EXPORT_DIRECTIVE ${KIT_export_directive}

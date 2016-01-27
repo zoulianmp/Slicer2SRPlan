@@ -24,6 +24,8 @@
 // Qt includes
 #include <QNetworkCookieJar>
 
+#include <QNetworkCookie>
+
 // QtCore includes
 #include "qSRplanBaseQTCoreExport.h"
 

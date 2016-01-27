@@ -60,4 +60,6 @@ QStringList qSlicerStylePlugin::keys() const
   return QStringList() << "Slicer" <<"Dark Slicer";
 }
 
-Q_EXPORT_PLUGIN2(qSlicerStylePlugin, qSlicerStylePlugin)
+//Q_EXPORT_PLUGIN2(qSlicerStylePlugin, qSlicerStylePlugin)
+
+Q_PLUGIN_METADATA(IID "qSlicerStylePlugin" FILE "qSlicerStyle.json");

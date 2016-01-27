@@ -147,7 +147,6 @@ set(libs
   )
 
 
-  message("SRPlanBaseLogic target libs ${libs}")
 
 
 # Archive support used by extensions and by SRPlan data bundle

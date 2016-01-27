@@ -20,7 +20,9 @@
 
 // Qt includes
 #include <QDebug>
-#include <QPlastiqueStyle>
+#include <QStyleFactory>
+//#include <QPlastiqueStyle>
+
 #include <QStandardItem>
 
 // CTK includes
@@ -72,7 +74,9 @@ void qMRMLCheckableNodeComboBoxPrivate::init(QAbstractItemModel* model)
 {
   Q_Q(qMRMLCheckableNodeComboBox);
 
-  this->ComboBoxStyle = new QPlastiqueStyle();
+  //this->ComboBoxStyle = new QPlastiqueStyle();
+
+  this->ComboBoxStyle = QStyleFactory::create("fusion");
   this->ComboBox = new ctkCheckableComboBox;
   this->ComboBox->setStyle(this->ComboBoxStyle);
 

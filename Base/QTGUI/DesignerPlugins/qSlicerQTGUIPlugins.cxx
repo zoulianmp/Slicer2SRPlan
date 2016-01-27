@@ -22,4 +22,6 @@
 
 #include <QtPlugin>
 
-Q_EXPORT_PLUGIN2(customwidgetplugin, qSlicerQTGUIPlugins);
+Q_PLUGIN_METADATA(IID "SRPlan.Qt.customwidgetplugin" FILE "qSlicerQTGUI.json");
+
+//Q_EXPORT_PLUGIN2(customwidgetplugin, qSlicerQTGUIPlugins);

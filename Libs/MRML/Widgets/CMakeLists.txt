@@ -360,9 +360,9 @@ if(Slicer_USE_QtTesting)
     )
 endif()
 
-QT4_WRAP_CPP(MRMLWidgets_MOC_CXX ${MRMLWidgets_MOC_SRCS})
-QT4_WRAP_UI(MRMLWidgets_UI_CXX ${MRMLWidgets_UI_SRCS})
-QT4_ADD_RESOURCES(MRMLWidgets_QRC_CXX ${MRMLWidgets_QRC_SRCS})
+QT5_WRAP_CPP(MRMLWidgets_MOC_CXX ${MRMLWidgets_MOC_SRCS})
+QT5_WRAP_UI(MRMLWidgets_UI_CXX ${MRMLWidgets_UI_SRCS})
+QT5_ADD_RESOURCES(MRMLWidgets_QRC_CXX ${MRMLWidgets_QRC_SRCS})
 
 source_group("Resources" FILES
   ${MRMLWidgets_UI_SRCS}
@@ -413,6 +413,8 @@ add_library(${lib_name}
   ${MRMLWidgets_QRC_CXX}
   )
 
+SET(QT_LIBRARIES Qt5::Gui Qt5::WebKitWidgets)
+
 set(MRMLWidgets_LIBRARIES
   ${QT_LIBRARIES}
   ${CTK_LIBRARIES}
@@ -423,7 +425,7 @@ list(APPEND MRMLWidgets_LIBRARIES
   vtkRenderingQt
   )
 
-
+message("qMRMLWidget Link Libs:  ${MRMLWidgets_LIBRARIES}")
 target_link_libraries(${lib_name} ${MRMLWidgets_LIBRARIES})
 
 # Apply user-defined properties to the library target.

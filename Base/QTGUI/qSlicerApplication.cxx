@@ -410,7 +410,8 @@ ctkQtTestingUtility* qSlicerApplication::testingUtility()
 void qSlicerApplication::setLayoutManager(qSlicerLayoutManager* layoutManager)
 {
   Q_D(qSlicerApplication);
-  d->LayoutManager = layoutManager;
+  d->LayoutManager = QSharedPointer<qSlicerLayoutManager>(layoutManager);
+
   if (this->applicationLogic())
     {
     this->applicationLogic()->SetSliceLogics(

@@ -152,8 +152,12 @@ if(SRPlan_USE_PYTHONQT)
     )
 endif()
 
+
+SET(QT_LIBRARIES Qt5::Network Qt5::Core)
+
 # Additional Target libraries (QT libs already included)
 set(KIT_target_libraries
+  ${QT_LIBRARIES}
   SRPlanBaseLogic
   MRMLDisplayableManager
   CTKCore
@@ -265,4 +269,4 @@ endif()
 #       Extensions. For that reason, the Testing directory is added inconditionnally.
 #       The code specific to SRPlan will be excluded directly in either Testing/Python
 #       or Testing/Cxx.
-add_subdirectory(Testing)
+#add_subdirectory(Testing)

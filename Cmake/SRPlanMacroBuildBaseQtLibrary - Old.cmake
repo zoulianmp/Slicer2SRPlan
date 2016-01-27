@@ -44,7 +44,7 @@
 #                           CMake macro. See implementation for the list of libraries added by default.
 #
 #   RESOURCES ............: Optional list of files that should be converted into resource header
-#                           using QT5_ADD_RESOURCES
+#                           using QT4_ADD_RESOURCES
 #
 # Options:
 #

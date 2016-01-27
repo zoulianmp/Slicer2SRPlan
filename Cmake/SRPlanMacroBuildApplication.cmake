@@ -138,10 +138,10 @@ macro(SRPlanMacroBuildAppLibrary)
   #-----------------------------------------------------------------------------
   # Sources
   # --------------------------------------------------------------------------
-  QT4_WRAP_CPP(SRPlanAPPLIB_MOC_OUTPUT ${SRPlanAPPLIB_MOC_SRCS})
-  QT4_WRAP_UI(SRPlanAPPLIB_UI_CXX ${SRPlanAPPLIB_UI_SRCS})
+  QT5_WRAP_CPP(SRPlanAPPLIB_MOC_OUTPUT ${SRPlanAPPLIB_MOC_SRCS})
+  QT5_WRAP_UI(SRPlanAPPLIB_UI_CXX ${SRPlanAPPLIB_UI_SRCS})
   if(DEFINED SRPlanAPPLIB_RESOURCES)
-    QT4_ADD_RESOURCES(SRPlanAPPLIB_QRC_SRCS ${SRPlanAPPLIB_RESOURCES})
+    QT5_ADD_RESOURCES(SRPlanAPPLIB_QRC_SRCS ${SRPlanAPPLIB_RESOURCES})
   endif(DEFINED SRPlanAPPLIB_RESOURCES)
 
   set_source_files_properties(

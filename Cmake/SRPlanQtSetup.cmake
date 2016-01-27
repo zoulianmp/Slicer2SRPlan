@@ -3,7 +3,7 @@
 # Qt requirements
 #-----------------------------------------------------------------------------
 if(NOT DEFINED SRPlan_REQUIRED_QT_VERSION)
-  set(SRPlan_REQUIRED_QT_VERSION "5.5.1" CACHE STRING "Minimum required Qt version" FORCE)
+  set(SRPlan_REQUIRED_QT_VERSION "5.0.0" CACHE STRING "Minimum required Qt version" FORCE)
 endif()
 
 
@@ -15,13 +15,11 @@ endif()
 # For example, the module name associated with the variable QT_USE_QTXML is QTXML.
 # Note that the modules will be installed when packaging.
 
- set(CTK_QT5_COMPONENTS Core Xml XmlPatterns Concurrent Sql Test)
-
-
 set(SRPlan_REQUIRED_QT_MODULES
     Core Gui Network OpenGL
 	UiTools Xml XmlPatterns 
-	Webkit Svg Sql 
+	Webkit Svg Sql webkitwidgets 
+	UiPlugin
 
    )
    

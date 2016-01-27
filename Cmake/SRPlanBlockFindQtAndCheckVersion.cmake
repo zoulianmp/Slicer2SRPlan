@@ -28,10 +28,10 @@ macro(__SRPlanBlockFindQtAndCheckVersion_find_qt)
 
 
   # Check version
-  if("${QT_VERSION_MAJOR}.${QT_VERSION_MINOR}.${QT_VERSION_PATCH}" VERSION_LESS "${SRPlan_REQUIRED_QT_VERSION}")
-    message(FATAL_ERROR "error: SRPlan requires at least Qt ${SRPlan_REQUIRED_QT_VERSION} "
-                        "-- you cannot use Qt ${QT_VERSION_MAJOR}.${QT_VERSION_MINOR}.${QT_VERSION_PATCH}. ${extra_error_message}")
-  endif()
+#  if("${QT_VERSION_MAJOR}.${QT_VERSION_MINOR}.${QT_VERSION_PATCH}" VERSION_LESS "${SRPlan_REQUIRED_QT_VERSION}")
+#    message(FATAL_ERROR "error: SRPlan requires at least Qt ${SRPlan_REQUIRED_QT_VERSION} "
+#                        "-- you cannot use Qt ${QT_VERSION_MAJOR}.${QT_VERSION_MINOR}.${QT_VERSION_PATCH}. ${extra_error_message}")
+#  endif()
 
   set(command_separated_module_list)
   # Check if all expected Qt modules have been discovered
