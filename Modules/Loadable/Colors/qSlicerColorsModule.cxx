@@ -43,7 +43,9 @@
 #include "vtkSlicerColorLogic.h"
 
 //-----------------------------------------------------------------------------
-Q_EXPORT_PLUGIN2(qSlicerColorsModule, qSlicerColorsModule);
+//Q_EXPORT_PLUGIN2(qSlicerColorsModule, qSlicerColorsModule);
+
+
 
 //-----------------------------------------------------------------------------
 class qSlicerColorsModulePrivate

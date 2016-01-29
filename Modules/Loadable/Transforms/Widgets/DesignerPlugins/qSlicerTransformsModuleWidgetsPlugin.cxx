@@ -2,4 +2,8 @@
 
 #include <QtPlugin>
 
-Q_EXPORT_PLUGIN2(customwidgetplugin, qSlicerTransformsModuleWidgetsPlugin);
+//Q_EXPORT_PLUGIN2(customwidgetplugin, qSlicerTransformsModuleWidgetsPlugin);
+
+
+
+

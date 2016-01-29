@@ -72,7 +72,12 @@ set(MODULE_RESOURCES
   Resources/qSlicerAnnotationModule.qrc
   )
 
+
+set(QT_LIBS Qt5::PrintSupport)
+
+
 set(MODULE_TARGET_LIBRARIES
+  ${QT_LIBS}
   qSRPlanBaseQTCore
   qMRMLWidgets
   vtkSRPlan${MODULE_NAME}ModuleMRML
@@ -81,6 +86,11 @@ set(MODULE_TARGET_LIBRARIES
   vtkSRPlan${MODULE_NAME}ModuleLogic
   qSRPlan${MODULE_NAME}ModuleWidgets
   )
+
+
+
+
+
 
 #-----------------------------------------------------------------------------
 SRPlanMacroBuildLoadableModule(

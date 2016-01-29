@@ -28,7 +28,11 @@
 #include "qSlicerViewControllersModuleWidget.h"
 
 //-----------------------------------------------------------------------------
-Q_EXPORT_PLUGIN2(qSlicerViewControllersModule, qSlicerViewControllersModule);
+//Q_EXPORT_PLUGIN2(qSlicerViewControllersModule, qSlicerViewControllersModule);
+
+
+
+
 
 //-----------------------------------------------------------------------------
 class qSlicerViewControllersModulePrivate

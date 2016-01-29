@@ -34,6 +34,8 @@ class Q_SRPlan_QTMODULES_DATA_EXPORT qSlicerDataModule
   : public qSlicerLoadableModule
 {
   Q_OBJECT
+  Q_PLUGIN_METADATA(IID "qSlicerDataModule" FILE "qSlicerDataModule.JSON")
+
   Q_INTERFACES(qSlicerLoadableModule);
 public:
   typedef qSlicerLoadableModule Superclass;

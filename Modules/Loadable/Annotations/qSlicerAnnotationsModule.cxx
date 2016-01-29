@@ -20,7 +20,8 @@
 #include "qSlicerAnnotationsReader.h"
 
 //-----------------------------------------------------------------------------
-Q_EXPORT_PLUGIN2(qSlicerAnnotationsModule, qSlicerAnnotationsModule);
+//Q_EXPORT_PLUGIN2(qSlicerAnnotationsModule, qSlicerAnnotationsModule);
+
 
 //-----------------------------------------------------------------------------
 /// \ingroup Slicer_QtModules_Annotation

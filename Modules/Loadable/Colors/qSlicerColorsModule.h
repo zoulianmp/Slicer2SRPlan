@@ -34,6 +34,7 @@ class Q_SRPlan_QTMODULES_COLORS_EXPORT qSlicerColorsModule
   : public qSlicerLoadableModule
 {
   Q_OBJECT
+  Q_PLUGIN_METADATA(IID "qSlicerColorsModule" FILE "qSlicerColorsModule.JSON")
   Q_INTERFACES(qSlicerLoadableModule);
 
 public:

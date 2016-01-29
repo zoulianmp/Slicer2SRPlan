@@ -36,6 +36,9 @@ class Q_SRPlan_QTMODULES_MODELS_EXPORT qSlicerModelsModule :
   public qSlicerLoadableModule
 {
   Q_OBJECT
+  Q_PLUGIN_METADATA(IID "qSlicerModelsModule" FILE "qSlicerModelsModule.JSON")
+
+
   Q_INTERFACES(qSlicerLoadableModule);
 
 public:

@@ -31,12 +31,15 @@
 class qSlicerAbstractModuleWidget;
 class qSlicerWelcomeModulePrivate;
 
+
+
 /// \ingroup Slicer_QtModules_SlicerWelcome
 class Q_SRPlan_QTMODULES_WELCOME_EXPORT qSlicerWelcomeModule :
   public qSlicerLoadableModule
 {
-  Q_OBJECT
-  Q_INTERFACES(qSlicerLoadableModule);
+	Q_OBJECT
+	Q_PLUGIN_METADATA(IID "qSlicerWelcomeModule" FILE "qSlicerWelcomeModule.JSON")
+    Q_INTERFACES(qSlicerLoadableModule)
 
 public:
 

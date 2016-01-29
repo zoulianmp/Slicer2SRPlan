@@ -50,7 +50,12 @@ set(MODULE_RESOURCES
   Resources/qSlicer${MODULE_NAME}Module.qrc
   )
 
+
+set(QT_LIBS Qt5::PrintSupport)
+
+
 set(MODULE_TARGET_LIBRARIES
+  ${QT_LIBS}
   qSRPlanBaseQTCore
   qMRMLWidgets
   vtkSRPlan${MODULE_NAME}ModuleLogic

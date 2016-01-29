@@ -34,6 +34,8 @@ class Q_SRPlan_QTMODULES_VOLUMES_EXPORT qSlicerVolumesModule :
   public qSlicerLoadableModule
 {
   Q_OBJECT
+  Q_PLUGIN_METADATA(IID "qSlicerVolumesModule" FILE "qSlicerVolumesModule.JSON")
+
   Q_INTERFACES(qSlicerLoadableModule);
 
 public:

@@ -29,8 +29,10 @@
 #include "qSlicerReformatModuleWidget.h"
 
 //------------------------------------------------------------------------------
-Q_EXPORT_PLUGIN2(qSlicerReformatModule,
-                 qSlicerReformatModule);
+//Q_EXPORT_PLUGIN2(qSlicerReformatModule, qSlicerReformatModule);
+
+
+
 
 //------------------------------------------------------------------------------
 /// \ingroup Slicer_QtModules_Reformat

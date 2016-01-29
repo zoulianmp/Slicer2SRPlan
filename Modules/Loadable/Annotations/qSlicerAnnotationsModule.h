@@ -17,6 +17,8 @@ class Q_SRPlan_QTMODULES_ANNOTATIONS_EXPORT qSlicerAnnotationsModule :
   public qSlicerLoadableModule
 {
   Q_OBJECT
+  Q_PLUGIN_METADATA(IID "qSlicerAnnotationsModule" FILE "qSlicerAnnotationsModule.JSON")
+
   Q_INTERFACES(qSlicerLoadableModule)
 public:
 

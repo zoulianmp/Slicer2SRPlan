@@ -38,6 +38,8 @@
 // Qt includes
 #include <QtGui>
 
+#include <QMenu>
+
 int FIDUCIAL_LABEL_COLUMN = 0;
 int FIDUCIAL_X_COLUMN = 1;
 int FIDUCIAL_Y_COLUMN = 2;
@@ -158,7 +160,7 @@ void qSlicerSimpleMarkupsWidget::setup()
 
   d->MarkupsFiducialTableWidget->setColumnCount( FIDUCIAL_COLUMNS );
   d->MarkupsFiducialTableWidget->setHorizontalHeaderLabels( QStringList() << "Label" << "X" << "Y" << "Z" );
-  d->MarkupsFiducialTableWidget->horizontalHeader()->setResizeMode( QHeaderView::Stretch );
+  d->MarkupsFiducialTableWidget->horizontalHeader()->setSectionResizeMode( QHeaderView::Stretch );
   d->MarkupsFiducialTableWidget->setContextMenuPolicy( Qt::CustomContextMenu );
   // only select rows rather than cells
   d->MarkupsFiducialTableWidget->setSelectionBehavior(QAbstractItemView::SelectRows);

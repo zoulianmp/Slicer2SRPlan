@@ -36,6 +36,8 @@ class Q_SRPlan_QTMODULES_VOLUMERENDERING_EXPORT qSlicerVolumeRenderingModule :
   public qSlicerLoadableModule
 {
   Q_OBJECT
+  Q_PLUGIN_METADATA(IID "qSlicerVolumeRenderingModule" FILE "qSlicerVolumeRenderingModule.JSON")
+
   Q_INTERFACES(qSlicerLoadableModule);
 
 public:

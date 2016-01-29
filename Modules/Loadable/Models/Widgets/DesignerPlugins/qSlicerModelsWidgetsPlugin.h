@@ -33,6 +33,7 @@ class Q_SRPlan_QTMODULES_MODELS_WIDGETS_PLUGINS_EXPORT qSlicerModelsWidgetsPlugi
   , public QDesignerCustomWidgetCollectionInterface
 {
   Q_OBJECT
+  Q_PLUGIN_METADATA(IID "customwidgetplugin" FILE "qSlicerModelsWidgetsPlugin.JSON")
   Q_INTERFACES(QDesignerCustomWidgetCollectionInterface);
 
 public:

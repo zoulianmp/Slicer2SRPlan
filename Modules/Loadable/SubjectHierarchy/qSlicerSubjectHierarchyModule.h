@@ -39,6 +39,7 @@ class Q_SRPlan_QTMODULES_SUBJECTHIERARCHY_EXPORT qSlicerSubjectHierarchyModule :
   public qSlicerLoadableModule
 {
   Q_OBJECT
+  Q_PLUGIN_METADATA(IID "qSlicerSubjectHierarchyModule" FILE "qSlicerSubjectHierarchyModule.JSON")
   Q_INTERFACES(qSlicerLoadableModule);
   QVTK_OBJECT
 

@@ -36,6 +36,7 @@ class Q_SRPlan_MODULE_ANNOTATIONS_WIDGETS_PLUGINS_EXPORT qSlicerAnnotationModule
   , public QDesignerCustomWidgetCollectionInterface
 {
   Q_OBJECT
+  Q_PLUGIN_METADATA(IID "qSlicerAnnotationModuleWidgetsPlugin" FILE "qSlicerAnnotationModuleWidgetsPlugin.JSON");
   Q_INTERFACES(QDesignerCustomWidgetCollectionInterface);
 
 public:

@@ -26,7 +26,9 @@
 #include "qSlicerWelcomeModuleWidget.h"
 
 //-----------------------------------------------------------------------------
-Q_EXPORT_PLUGIN2(qSlicerWelcomeModule, qSlicerWelcomeModule);
+//Q_EXPORT_PLUGIN2(qSlicerWelcomeModule, qSlicerWelcomeModule);
+
+
 
 //-----------------------------------------------------------------------------
 /// \ingroup Slicer_QtModules_SlicerWelcome

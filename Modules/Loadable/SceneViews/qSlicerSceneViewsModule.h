@@ -17,6 +17,8 @@ class Q_SRPlan_QTMODULES_SCENEVIEWS_EXPORT qSlicerSceneViewsModule :
   public qSlicerLoadableModule
 {
   Q_OBJECT
+  Q_PLUGIN_METADATA(IID "qSlicerSceneViewsModule" FILE "qSlicerSceneViewsModule.JSON")
+
   Q_INTERFACES(qSlicerLoadableModule)
 public:
 

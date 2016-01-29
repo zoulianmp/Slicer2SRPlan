@@ -35,6 +35,8 @@ class Q_SRPlan_QTMODULES_CAMERAS_EXPORT qSlicerCamerasModule
   : public qSlicerLoadableModule
 {
   Q_OBJECT
+  Q_PLUGIN_METADATA(IID "qSlicerCamerasModule" FILE "qSlicerCamerasModule.JSON")
+
   Q_INTERFACES(qSlicerLoadableModule);
 public:
   typedef qSlicerLoadableModule Superclass;

@@ -34,6 +34,8 @@ class Q_SRPlan_MODULE_VOLUMERENDERING_WIDGETS_PLUGINS_EXPORT qSlicerVolumeRender
   , public QDesignerCustomWidgetCollectionInterface
 {
   Q_OBJECT
+  Q_PLUGIN_METADATA(IID "customwidgetplugin" FILE "qSlicerVolumeRenderingModuleWidgetsPlugin.JSON")
+
   Q_INTERFACES(QDesignerCustomWidgetCollectionInterface);
 
 public:

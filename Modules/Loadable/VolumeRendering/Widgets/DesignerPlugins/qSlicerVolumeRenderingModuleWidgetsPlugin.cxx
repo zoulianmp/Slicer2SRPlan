@@ -2,4 +2,7 @@
 
 #include <QtPlugin>
 
-Q_EXPORT_PLUGIN2(customwidgetplugin, qSlicerVolumeRenderingModuleWidgetsPlugin);
+//Q_EXPORT_PLUGIN2(customwidgetplugin, qSlicerVolumeRenderingModuleWidgetsPlugin);
+
+
+

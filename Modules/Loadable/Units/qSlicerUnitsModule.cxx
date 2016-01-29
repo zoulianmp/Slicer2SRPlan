@@ -30,7 +30,10 @@
 #include "qSlicerUnitsSettingsPanel.h"
 
 //-----------------------------------------------------------------------------
-Q_EXPORT_PLUGIN2(qSlicerUnitsModule, qSlicerUnitsModule);
+//Q_EXPORT_PLUGIN2(qSlicerUnitsModule, qSlicerUnitsModule);
+
+
+
 
 //-----------------------------------------------------------------------------
 class qSlicerUnitsModulePrivate

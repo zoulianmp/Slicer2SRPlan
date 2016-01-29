@@ -33,6 +33,8 @@ class Q_SRPlan_QTMODULES_REFORMAT_EXPORT
 qSlicerReformatModule : public qSlicerLoadableModule
 {
   Q_OBJECT
+
+  Q_PLUGIN_METADATA(IID "qSlicerReformatModule" FILE "qSlicerReformatModule.JSON")
   Q_INTERFACES(qSlicerLoadableModule);
 
 public:

@@ -32,6 +32,7 @@ class Q_SRPlan_QTMODULES_VIEWCONTROLLERS_EXPORT qSlicerViewControllersModule
   : public qSlicerLoadableModule
 {
   Q_OBJECT
+  Q_PLUGIN_METADATA(IID "qSlicerViewControllersModule" FILE "qSlicerViewControllersModule.JSON")
   Q_INTERFACES(qSlicerLoadableModule);
 
 public:

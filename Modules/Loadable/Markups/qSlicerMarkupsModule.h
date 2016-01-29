@@ -30,6 +30,7 @@ class Q_SRPlan_QTMODULES_MARKUPS_EXPORT qSlicerMarkupsModule :
   public qSlicerLoadableModule
 {
   Q_OBJECT
+  Q_PLUGIN_METADATA(IID "qSlicerMarkupsModule" FILE "qSlicerMarkupsModule.JSON")
   Q_INTERFACES(qSlicerLoadableModule);
 
 public:

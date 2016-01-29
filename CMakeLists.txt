@@ -4,6 +4,8 @@ cmake_minimum_required(VERSION 2.8.9)
 cmake_policy(SET CMP0048 NEW)
 
 
+set(QT_DEBUG_PLUGINS true)
+
 #-----------------------------------------------------------------------------
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/CMake" 
                   
@@ -298,7 +300,7 @@ include(SRPlanjqPlotSetup)
 
 add_subdirectory(Libs)
 add_subdirectory(Base)
-#add_subdirectory(Resources)
+add_subdirectory(Resources)
 
 
 
@@ -321,17 +323,17 @@ set(SRPlan_GUI_LIBRARY qSRPlanBaseQTApp)
 #-----------------------------------------------------------------------------
 # Applications
 #-----------------------------------------------------------------------------
-#add_subdirectory(Modules/Core)
+add_subdirectory(Modules/Core)
 
 
-#add_subdirectory(Base/QTApp)
-#add_subdirectory(Modules)
-#if (NOT SRPlan_APPLICATIONS_DIR)
-#  add_subdirectory(Applications)
-#else()
-#  add_subdirectory(${SRPlan_APPLICATIONS_DIR}
-#    ${CMAKE_CURRENT_BINARY_DIR}/Applications
-#    )
-#endif()
+add_subdirectory(Base/QTApp)
+add_subdirectory(Modules)
+if (NOT SRPlan_APPLICATIONS_DIR)
+  add_subdirectory(Applications)
+else()
+  add_subdirectory(${SRPlan_APPLICATIONS_DIR}
+    ${CMAKE_CURRENT_BINARY_DIR}/Applications
+    )
+endif()
 
 

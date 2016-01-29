@@ -2,4 +2,4 @@
 
 #include <QtPlugin>
 
-Q_EXPORT_PLUGIN2(customwidgetplugin, qSlicerMarkupsModuleWidgetsPlugin);
+//Q_EXPORT_PLUGIN2(customwidgetplugin, qSlicerMarkupsModuleWidgetsPlugin);

@@ -32,6 +32,9 @@ class QStyle;
 
 class Q_SRPlan_STYLES_PLUGINS_EXPORT qSlicerStylePlugin : public QStylePlugin
 {
+
+  Q_PLUGIN_METADATA(IID "qSlicerStylePlugin" FILE "qSlicerStylePlugin.json");
+
 public:
   /// Superclass typedef
   typedef QStylePlugin Superclass;

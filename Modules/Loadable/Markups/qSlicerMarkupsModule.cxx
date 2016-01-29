@@ -46,7 +46,10 @@
 //#include "vtkSlicerMarkupsLogic.h"
 
 //-----------------------------------------------------------------------------
-Q_EXPORT_PLUGIN2(qSlicerMarkupsModule, qSlicerMarkupsModule);
+//Q_EXPORT_PLUGIN2(qSlicerMarkupsModule, qSlicerMarkupsModule);
+
+
+
 
 //-----------------------------------------------------------------------------
 /// \ingroup Slicer_QtModules_Markups

@@ -31,7 +31,9 @@
 #include "qSlicerDoubleArraysReader.h"
 
 //-----------------------------------------------------------------------------
-Q_EXPORT_PLUGIN2(qSlicerDoubleArraysModule, qSlicerDoubleArraysModule);
+//Q_EXPORT_PLUGIN2(qSlicerDoubleArraysModule, qSlicerDoubleArraysModule);
+
+
 
 //-----------------------------------------------------------------------------
 /// \ingroup Slicer_QtModules_ExtensionTemplate

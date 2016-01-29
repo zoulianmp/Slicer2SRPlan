@@ -37,6 +37,8 @@ class Q_SRPlan_MODULE_TRANSFORMS_WIDGETS_PLUGINS_EXPORT qSlicerTransformsModuleW
   , public QDesignerCustomWidgetCollectionInterface
 {
   Q_OBJECT
+
+  Q_PLUGIN_METADATA(IID "customwidgetplugin" FILE "qSlicerTransformsModuleWidgetsPlugin.JSON")
   Q_INTERFACES(QDesignerCustomWidgetCollectionInterface);
 
 public:

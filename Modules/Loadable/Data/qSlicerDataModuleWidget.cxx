@@ -220,8 +220,8 @@ void qSlicerDataModuleWidget::onSceneModelChanged(const QString& modelType)
     QStringList() << "Nodes" << "IDs");
 
   d->MRMLTreeView->header()->setStretchLastSection(false);
-  d->MRMLTreeView->header()->setResizeMode(0, QHeaderView::Stretch);
-  d->MRMLTreeView->header()->setResizeMode(1, QHeaderView::ResizeToContents);
+  d->MRMLTreeView->header()->setSectionResizeMode(0, QHeaderView::Stretch);
+  d->MRMLTreeView->header()->setSectionResizeMode(1, QHeaderView::ResizeToContents);
 
   this->setMRMLIDsVisible(d->DisplayMRMLIDsCheckBox->isChecked());
 

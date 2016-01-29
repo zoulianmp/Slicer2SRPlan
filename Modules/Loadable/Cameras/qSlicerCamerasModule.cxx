@@ -27,7 +27,8 @@
 #include "vtkSlicerCamerasModuleLogic.h"
 
 //-----------------------------------------------------------------------------
-Q_EXPORT_PLUGIN2(qSlicerCamerasModule, qSlicerCamerasModule);
+//Q_EXPORT_PLUGIN2(qSlicerCamerasModule, qSlicerCamerasModule);
+
 
 //-----------------------------------------------------------------------------
 class qSlicerCamerasModulePrivate

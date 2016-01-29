@@ -22,4 +22,5 @@
 
 #include <QtPlugin>
 
-Q_EXPORT_PLUGIN2(customwidgetplugin, qSlicerModelsWidgetsPlugin);
+//Q_EXPORT_PLUGIN2(customwidgetplugin, qSlicerModelsWidgetsPlugin);
+

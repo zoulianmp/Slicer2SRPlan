@@ -48,6 +48,8 @@
 class Q_SRPlan_BASE_QTGUI_ICON_ENGINE_EXPORT qSlicerIconEnginePlugin: public ctkIconEnginePlugin
 {
   Q_OBJECT
+  Q_PLUGIN_METADATA(IID "qSlicerIconEnginePlugin" FILE "qSlicerIconEnginePlugin.json");
+
 public:
   qSlicerIconEnginePlugin(QObject* parent = 0);
 };

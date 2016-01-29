@@ -24,8 +24,6 @@
 //Q_EXPORT_PLUGIN2(qSlicerIconEnginePlugin, qSlicerIconEnginePlugin)
 
 
-Q_PLUGIN_METADATA(IID "qSlicerIconEnginePlugin" FILE "qSlicerIconEngine.json");
-
 //------------------------------------------------------------------------------
 qSlicerIconEnginePlugin::qSlicerIconEnginePlugin(QObject* parentObject)
   :ctkIconEnginePlugin(parentObject)

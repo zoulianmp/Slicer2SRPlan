@@ -18,7 +18,7 @@
 #include "qSlicerSubjectHierarchySceneViewsPlugin.h"
 
 //-----------------------------------------------------------------------------
-Q_EXPORT_PLUGIN2(qSlicerSceneViewsModule, qSlicerSceneViewsModule);
+//Q_EXPORT_PLUGIN2(qSlicerSceneViewsModule, qSlicerSceneViewsModule);
 
 //-----------------------------------------------------------------------------
 /// \ingroup Slicer_QtModules_SceneViews
