@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 2.8.9)
 cmake_policy(SET CMP0048 NEW)
 
 
-set(QT_DEBUG_PLUGINS true)
+
 
 #-----------------------------------------------------------------------------
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/CMake" 
@@ -98,6 +98,9 @@ option(SRPlan_BUILD_QTSCRIPTEDMODULES "Build QT Scripted Modules for SRPlan" OFF
 option(SRPlan_BUILD_CLI "Build CLI Modules for SRPlan" OFF)
 
 
+option(SRPlan_OUT_UNIFY "Set The Output Unify Structure,Prompt for Nosuperbuild" ON)
+
+
 #-----------------------------------------------------------------------------
 # General SRPlan Variables
 #-----------------------------------------------------------------------------
@@ -107,6 +110,11 @@ set(SRPlan_CMAKE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/CMake" )
 set(SRPlan_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}")
 
 set(SRPlan_BINARY_DIR "${CMAKE_CURRENT_BINARY_DIR}")
+
+
+
+
+
 
 #-----------------------------------------------------------------------------
 # Install no development files by default, but allow the user to get
@@ -300,7 +308,7 @@ include(SRPlanjqPlotSetup)
 
 add_subdirectory(Libs)
 add_subdirectory(Base)
-add_subdirectory(Resources)
+#add_subdirectory(Resources)
 
 
 
@@ -314,6 +322,10 @@ include(SRPlanMacroBuildModuleLogic)
 include(SRPlanMacroBuildModuleMRML)
 include(SRPlanMacroBuildModuleWidgets)
 
+#include(SRPlanMacroBuildQtPlugin)
+
+
+
 #-----------------------------------------------------------------------------
 # SRPlan Core and GUI library
 #-----------------------------------------------------------------------------
@@ -323,17 +335,17 @@ set(SRPlan_GUI_LIBRARY qSRPlanBaseQTApp)
 #-----------------------------------------------------------------------------
 # Applications
 #-----------------------------------------------------------------------------
-add_subdirectory(Modules/Core)
+#add_subdirectory(Modules/Core)
 
 
-add_subdirectory(Base/QTApp)
-add_subdirectory(Modules)
-if (NOT SRPlan_APPLICATIONS_DIR)
-  add_subdirectory(Applications)
-else()
-  add_subdirectory(${SRPlan_APPLICATIONS_DIR}
-    ${CMAKE_CURRENT_BINARY_DIR}/Applications
-    )
-endif()
+#add_subdirectory(Base/QTApp)
+#add_subdirectory(Modules)
+#if (NOT SRPlan_APPLICATIONS_DIR)
+#  add_subdirectory(Applications)
+#else()
+#  add_subdirectory(${SRPlan_APPLICATIONS_DIR}
+#    ${CMAKE_CURRENT_BINARY_DIR}/Applications
+#    )
+#endif()
 
 

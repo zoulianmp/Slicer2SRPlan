@@ -24,7 +24,7 @@
 #
 
 #! \ingroup CMakeAPI
-macro(ctkMacroBuildQtPlugin)
+macro(SRPlanMacroBuildQtPlugin)
   cmake_parse_arguments(MY
     "" # no options
     "NAME;EXPORT_DIRECTIVE;FOLDER;PLUGIN_DIR" # one value args
@@ -185,7 +185,7 @@ macro(ctkMacroBuildQtPlugin)
 
 endmacro()
 
-macro(ctkMacroBuildQtDesignerPlugin)
+macro(SRPlanMacroBuildQtDesignerPlugin)
   if(CTK_QT_VERSION VERSION_GREATER "4")
     find_package(Qt5Designer REQUIRED)
     add_definitions(${Qt5Designer_DEFINITIONS})
@@ -205,14 +205,14 @@ macro(ctkMacroBuildQtDesignerPlugin)
   endif()
 endmacro()
 
-macro(ctkMacroBuildQtIconEnginesPlugin)
-  ctkMacroBuildQtPlugin(
+macro(SRPlanMacroBuildQtIconEnginesPlugin)
+    SRPlanMacroBuildQtPlugin(
     PLUGIN_DIR iconengines
     ${ARGN})
 endmacro()
 
-macro(ctkMacroBuildQtStylesPlugin)
-  ctkMacroBuildQtPlugin(
+macro(SRPlanMacroBuildQtStylesPlugin)
+    SRPlanMacroBuildQtPlugin(
     PLUGIN_DIR styles
     ${ARGN})
 endmacro()

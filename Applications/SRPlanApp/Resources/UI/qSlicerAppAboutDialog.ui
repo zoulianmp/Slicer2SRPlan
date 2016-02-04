@@ -435,7 +435,16 @@
    <string>About 3D Slicer</string>
   </property>
   <layout class="QGridLayout" name="gridLayout" columnstretch="1,1,0">
-   <property name="margin">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
     <number>0</number>
    </property>
    <item row="2" column="0" colspan="3">
@@ -498,23 +507,17 @@
     </widget>
    </item>
    <item row="0" column="0">
-    <widget class="ctkThumbnailLabel" name="SlicerLabel">
+    <widget class="ctkThumbnailLabel" name="SlicerLabel" native="true">
      <property name="minimumSize">
       <size>
        <width>256</width>
        <height>0</height>
       </size>
      </property>
-     <property name="textPosition">
-      <set>Qt::AlignCenter</set>
+     <property name="pixmap" stdset="0">
+      <pixmap resource="../SRPlanApp.qrc">:/Logo.png</pixmap>
      </property>
-     <property name="pixmap">
-      <pixmap resource="../SlicerApp.qrc">:/Logo.png</pixmap>
-     </property>
-     <property name="transformationMode">
-      <enum>Qt::SmoothTransformation</enum>
-     </property>
-     <property name="selectedColor">
+     <property name="selectedColor" stdset="0">
       <color alpha="0">
        <red>255</red>
        <green>255</green>
@@ -552,7 +555,7 @@
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../SlicerApp.qrc"/>
+  <include location="../SRPlanApp.qrc"/>
  </resources>
  <connections/>
 </ui>

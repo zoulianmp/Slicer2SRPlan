@@ -526,8 +526,8 @@
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../SlicerApp.qrc"/>
   <include location="../../../../Base/QTGUI/Resources/qSlicerBaseQTGUI.qrc"/>
+  <include location="../SRPlanApp.qrc"/>
  </resources>
  <connections/>
 </ui>
