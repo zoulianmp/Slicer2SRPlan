@@ -312,6 +312,14 @@ SRPlanMacroBuildBaseQtLibrary(
   WRAP_PYTHONQT
   )
 
+if(SRPlan_OUT_UNIFY) 
+   add_custom_command(
+        TARGET ${PROJECT_NAME}
+        POST_BUILD
+        COMMAND  ${CMAKE_COMMAND} -E copy  $<TARGET_FILE:${PROJECT_NAME}> ${SRPlan_OUT_Library})
+endif()
+
+
 #-----------------------------------------------------------------------------
 # SRPlan icon engine
 #-----------------------------------------------------------------------------
@@ -329,6 +337,14 @@ ctkMacroBuildQtIconEnginesPlugin(
   MOC_SRCS qSlicerIconEnginePlugin.h
   TARGET_LIBRARIES ${QT_LIBRARIES} ${CTK_LIBRARIES}
   )
+
+if(SRPlan_OUT_UNIFY) 
+   add_custom_command(
+      TARGET ${PROJECT_NAME}
+      POST_BUILD
+      COMMAND  ${CMAKE_COMMAND} -E copy  $<TARGET_FILE:qSRPlanIconEnginePlugin> ${SRPlan_OUT_IconEnginePlugin})
+endif()
+
 
 # Qt Plugins
 add_subdirectory(DesignerPlugins)

@@ -78,6 +78,16 @@ SRPlanMacroBuildAppLibrary(
   RESOURCES ${APPLIB_RESOURCES}
   )
 
+   
+if(SRPlan_OUT_UNIFY)
+   add_custom_command(
+        TARGET ${APPLIB_NAME}
+        POST_BUILD
+        COMMAND  ${CMAKE_COMMAND} -E copy  $<TARGET_FILE:${APPLIB_NAME}> ${SRPlan_OUT_Library})
+
+endif()
+
+
 # --------------------------------------------------------------------------
 # Application executable
 # --------------------------------------------------------------------------
@@ -101,6 +111,18 @@ SRPlanMacroBuildApplication(
   TARGET_NAME_VAR "APP_TARGET_NAME"
   ${extra_args}
   )
+
+ 
+   
+if(SRPlan_OUT_UNIFY)
+   add_custom_command(
+        TARGET ${PROJECT_NAME}
+        POST_BUILD
+        COMMAND  ${CMAKE_COMMAND} -E copy  $<TARGET_FILE:${PROJECT_NAME}> ${SRPlan_OUT_Runtime})
+
+endif()
+
+
 
 # --------------------------------------------------------------------------
 if(BUILD_TESTING)

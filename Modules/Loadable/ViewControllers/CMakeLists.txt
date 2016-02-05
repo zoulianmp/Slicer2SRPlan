@@ -48,3 +48,4 @@ SRPlanMacroBuildLoadableModule(
   RESOURCES ${MODULE_RESOURCES}
   WITH_GENERIC_TESTS
   )
+

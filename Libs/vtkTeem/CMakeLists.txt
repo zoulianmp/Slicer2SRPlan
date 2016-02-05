@@ -128,11 +128,12 @@ if(SRPlan_LIBRARY_PROPERTIES)
   set_target_properties(${lib_name} PROPERTIES ${SRPlan_LIBRARY_PROPERTIES})
 endif()
 
-add_custom_command(
-      TARGET ${lib_name}
-      POST_BUILD
-      COMMAND  ${CMAKE_COMMAND} -E copy  $<TARGET_FILE:${lib_name}> ${SRPlan_OUT_Library})
-
+if(SRPlan_OUT_UNIFY)
+   add_custom_command(
+        TARGET ${lib_name}
+        POST_BUILD
+        COMMAND  ${CMAKE_COMMAND} -E copy  $<TARGET_FILE:${lib_name}> ${SRPlan_OUT_Library})
+endif()
 
 # --------------------------------------------------------------------------
 # Folder

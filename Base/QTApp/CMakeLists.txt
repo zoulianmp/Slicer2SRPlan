@@ -59,6 +59,15 @@ SRPlanMacroBuildBaseQtLibrary(
   WRAP_PYTHONQT
   )
 
+
+if(SRPlan_OUT_UNIFY)
+    add_custom_command(
+        TARGET ${PROJECT_NAME}
+        POST_BUILD
+        COMMAND  ${CMAKE_COMMAND} -E copy  $<TARGET_FILE:${PROJECT_NAME}> ${SRPlan_OUT_Library})
+
+endif()
+
 # --------------------------------------------------------------------------
 if(BUILD_TESTING)
 #  add_subdirectory(Testing)

@@ -308,7 +308,7 @@ include(SRPlanjqPlotSetup)
 
 add_subdirectory(Libs)
 add_subdirectory(Base)
-#add_subdirectory(Resources)
+add_subdirectory(Resources)
 
 
 
@@ -322,7 +322,7 @@ include(SRPlanMacroBuildModuleLogic)
 include(SRPlanMacroBuildModuleMRML)
 include(SRPlanMacroBuildModuleWidgets)
 
-#include(SRPlanMacroBuildQtPlugin)
+
 
 
 
@@ -335,17 +335,17 @@ set(SRPlan_GUI_LIBRARY qSRPlanBaseQTApp)
 #-----------------------------------------------------------------------------
 # Applications
 #-----------------------------------------------------------------------------
-#add_subdirectory(Modules/Core)
+add_subdirectory(Modules/Core)
 
 
-#add_subdirectory(Base/QTApp)
-#add_subdirectory(Modules)
-#if (NOT SRPlan_APPLICATIONS_DIR)
-#  add_subdirectory(Applications)
-#else()
-#  add_subdirectory(${SRPlan_APPLICATIONS_DIR}
-#    ${CMAKE_CURRENT_BINARY_DIR}/Applications
-#    )
-#endif()
+add_subdirectory(Base/QTApp)
+add_subdirectory(Modules)
+if (NOT SRPlan_APPLICATIONS_DIR)
+  add_subdirectory(Applications)
+else()
+  add_subdirectory(${SRPlan_APPLICATIONS_DIR}
+    ${CMAKE_CURRENT_BINARY_DIR}/Applications
+   )
+endif()
 
 

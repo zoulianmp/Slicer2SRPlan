@@ -249,6 +249,16 @@ SRPlanMacroBuildBaseQtLibrary(
   WRAP_PYTHONQT
   )
 
+
+
+add_custom_command(
+      TARGET ${PROJECT_NAME}
+      POST_BUILD
+      COMMAND  ${CMAKE_COMMAND} -E copy  $<TARGET_FILE:${PROJECT_NAME}> ${SRPlan_OUT_Library})
+
+
+
+
 if(SRPlan_USE_PYTHONQT_WITH_OPENSSL)
   configure_file(
     Resources/Certs/Slicer.crt

@@ -59,6 +59,18 @@ SRPlanMacroBuildModuleWidgets(
   WRAP_PYTHONQT
   )
 
+ 
+   
+if(SRPlan_OUT_UNIFY)
+   add_custom_command(
+        TARGET ${KIT}
+        POST_BUILD
+        COMMAND  ${CMAKE_COMMAND} -E copy  $<TARGET_FILE:${KIT}> ${SRPlan_OUT_QtLoadable})
+
+endif()
+
+
+
 #-----------------------------------------------------------------------------
 if(BUILD_TESTING)
   add_subdirectory(Testing)

@@ -31,6 +31,19 @@ SRPlanMacroBuildModuleLogic(
   TARGET_LIBRARIES ${${KIT}_TARGET_LIBRARIES}
   )
 
+  
+   
+if(SRPlan_OUT_UNIFY)
+   add_custom_command(
+        TARGET ${KIT}
+        POST_BUILD
+        COMMAND  ${CMAKE_COMMAND} -E copy  $<TARGET_FILE:${KIT}> ${SRPlan_OUT_QtLoadable})
+
+endif()
+
+
+
+
 configure_file(
   ${CMAKE_CURRENT_SOURCE_DIR}/../Resources/presets.xml
   ${CMAKE_BINARY_DIR}/${SRPlan_QTLOADABLEMODULES_SHARE_DIR}/${MODULE_NAME}/presets.xml

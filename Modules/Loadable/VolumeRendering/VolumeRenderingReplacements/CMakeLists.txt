@@ -98,3 +98,15 @@ SRPlanMacroBuildModuleLogic(
   SRCS ${module_replacements_SRCS}
   TARGET_LIBRARIES ${module_replacements_target_libraries}
   )
+
+ 
+ 
+   
+if(SRPlan_OUT_UNIFY)
+   add_custom_command(
+        TARGET ${module_replacements_name}
+        POST_BUILD
+        COMMAND  ${CMAKE_COMMAND} -E copy  $<TARGET_FILE:${module_replacements_name}> ${SRPlan_OUT_QtLoadable})
+
+endif()
+

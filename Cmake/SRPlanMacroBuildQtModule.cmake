@@ -204,6 +204,17 @@ macro(SRPlanMacroBuildLoadableModule)
 
   set_property(GLOBAL APPEND PROPERTY SRPlan_MODULE_TARGETS ${lib_name})
 
+  
+  
+  if(SRPlan_OUT_UNIFY)
+    add_custom_command(
+        TARGET  ${lib_name}
+        POST_BUILD
+        COMMAND  ${CMAKE_COMMAND} -E copy  $<TARGET_FILE:${lib_name}> ${SRPlan_OUT_QtLoadable})
+
+  endif()
+
+  
   # --------------------------------------------------------------------------
   # Install library
   # --------------------------------------------------------------------------
