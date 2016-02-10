@@ -887,6 +887,8 @@ vtkMRMLLayoutLogic* qMRMLLayoutManager::layoutLogic()const
 void qMRMLLayoutManager::setMRMLScene(vtkMRMLScene* scene)
 {
   Q_D(qMRMLLayoutManager);
+
+
   if (d->MRMLScene == scene)
     {
     return;

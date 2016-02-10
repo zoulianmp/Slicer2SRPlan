@@ -82,6 +82,9 @@
 
 // VTK includes
 #include <vtkCollection.h>
+#include <vtkNew.h>
+
+
 
 namespace
 {
@@ -303,9 +306,15 @@ void qSlicerAppMainWindowPrivate::setupUi(QMainWindow * mainWindow)
   // Layout Manager
   //----------------------------------------------------------------------------
   // Instanciate and assign the layout manager to the slicer application
+
+  
   this->LayoutManager = new qSlicerLayoutManager(layoutFrame);
   this->LayoutManager->setScriptedDisplayableManagerDirectory(
       qSlicerApplication::application()->slicerHome() + "/bin/Python/mrmlDisplayableManager");
+
+  this->LayoutManager->setMRMLScene(qSlicerApplication::application()->mrmlScene());
+
+
   qSlicerApplication::application()->setLayoutManager(this->LayoutManager);
 #ifdef SRPlan_USE_QtTesting
   // we store this layout manager to the Object state property for QtTesting
@@ -317,7 +326,9 @@ void qSlicerAppMainWindowPrivate::setupUi(QMainWindow * mainWindow)
   // Layout manager should also listen the MRML scene
   // Note: This creates the OpenGL context for each view, so things like
   // multisampling should probably be configured before this line is executed.
-  this->LayoutManager->setMRMLScene(qSlicerApplication::application()->mrmlScene());
+
+
+
   QObject::connect(qSlicerApplication::application(),
                    SIGNAL(mrmlSceneChanged(vtkMRMLScene*)),
                    this->LayoutManager,
