@@ -11,9 +11,10 @@ endif()
 set(DCMTK_USE_FILE_INCLUDED 1)
 
 
-message("After DCMTK USE File  ")
 
-set(PACKAGE_PREFIX_DIR "C:/BaseLibsDebug/DCMTK")
+set(PACKAGE_PREFIX_DIR ${DCMTK_ROOT_DIR})
+
+#set(PACKAGE_PREFIX_DIR "C:/BaseLibsInstall/DCMTK")
 
 macro(set_and_check _var _file)
   set(${_var} "${_file}")
@@ -75,7 +76,7 @@ SET_AND_CHECK(DCMTK_dcmseg_INCLUDE_DIR "${PACKAGE_PREFIX_DIR}/include/dcmtk/dcms
 
 SET_AND_CHECK(DCMTK_TARGETS "${PACKAGE_PREFIX_DIR}/cmake/DCMTKTargets.cmake")
 
-message("DCMTK_config_INCLUDE_DIR: ${DCMTK_config_INCLUDE_DIR}")
+#message("DCMTK_config_INCLUDE_DIR: ${DCMTK_config_INCLUDE_DIR}")
 
 SET(DCMTK_INCLUDE_DIRS "")
 FOREACH(module config ${DCMTK_MODULES})

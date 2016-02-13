@@ -106,6 +106,13 @@ void qSlicerColorsModule::setup()
     "Colors", QString("ColorTableFile"),
     QStringList() << "vtkMRMLColorNode", true, this));
 
+  QSettings * se = app->userSettings();
+
+  QSettings * se1 = app->defaultSettings();
+
+  QStringList paths1 = se1->value("QTCoreModules/Colors/ColorFilePaths").toStringList();
+
+
   QStringList paths = app->userSettings()->value("QTCoreModules/Colors/ColorFilePaths").toStringList();
 #ifdef Q_OS_WIN32
   QString joinedPaths = paths.join(";");

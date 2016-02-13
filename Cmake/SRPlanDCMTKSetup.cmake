@@ -25,9 +25,9 @@
 
 
 
+SET(DCMTK_ROOT_DIR "C:/BaseLibsInstall/DCMTK" CACHE PATH "DCMTK Package Root Path" FORCE)
 
-
-find_package(DCMTK )
+#find_package(DCMTK )
 
 include(UseDCMTK)
 

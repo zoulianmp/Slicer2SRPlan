@@ -35,7 +35,7 @@ vtkMRMLFreeSurferProceduralColorNode::vtkMRMLFreeSurferProceduralColorNode()
 
   // get the home directory and the colour file in the freesurfer lib dir
   std::string slicerHome;
-  if (vtksys::SystemTools::GetEnv("SLICER_HOME") == NULL)
+  if (vtksys::SystemTools::GetEnv("SRPlan_HOME") == NULL)
     {
     if (vtksys::SystemTools::GetEnv("PWD") != NULL)
       {
@@ -48,7 +48,7 @@ vtkMRMLFreeSurferProceduralColorNode::vtkMRMLFreeSurferProceduralColorNode()
     }
   else
     {
-    slicerHome = std::string(vtksys::SystemTools::GetEnv("SLICER_HOME"));
+    slicerHome = std::string(vtksys::SystemTools::GetEnv("SRPlan_HOME"));
     }
   // check to see if slicer home was set
   std::vector<std::string> filesVector;

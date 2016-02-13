@@ -35,17 +35,17 @@
 
 // For:
 //  - SRPlan_QTLOADABLEMODULES_LIB_DIR
-//  - Slicer_CLIMODULES_BIN_DIR
-//  - Slicer_LIB_DIR
+//  - SRPlan_CLIMODULES_BIN_DIR
+//  - SRPlan_LIB_DIR
 //  - SRPlan_SHARE_DIR
-//  - Slicer_USE_PYTHONQT
-//  - Slicer_BUILD_EXTENSIONMANAGER_SUPPORT
+//  - SRPlan_USE_PYTHONQT
+//  - SRPlan_BUILD_EXTENSIONMANAGER_SUPPORT
 //  - SRPlan_BUILD_WIN32_CONSOLE
-//  - Slicer_BUILD_CLI_SUPPORT
-//  - Slicer_BUILD_I18N_SUPPORT
-//  - Slicer_ORGANIZATION_DOMAIN
-//  - Slicer_ORGANIZATION_NAME
-//  - SLICER_REVISION_SPECIFIC_USER_SETTINGS_FILEBASENAME
+//  - SRPlan_BUILD_CLI_SUPPORT
+//  - SRPlan_BUILD_I18N_SUPPORT
+//  - SRPlan_ORGANIZATION_DOMAIN
+//  - SRPlan_ORGANIZATION_NAME
+//  - SRPlan_REVISION_SPECIFIC_USER_SETTINGS_FILEBASENAME
 #include "vtkSRPlanConfigure.h"
 
 #ifdef SRPlan_USE_PYTHONQT
@@ -58,7 +58,7 @@
 #include <QSslSocket>
 #endif
 
-// SlicerQt includes
+// SRPlanQt includes
 #include "qSlicerCoreApplication_p.h"
 #include "qSlicerCoreCommandOptions.h"
 #include "qSlicerCoreIOManager.h"

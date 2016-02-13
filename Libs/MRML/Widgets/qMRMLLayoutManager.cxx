@@ -988,8 +988,7 @@ int qMRMLLayoutManager::layout()const
 //------------------------------------------------------------------------------
 void qMRMLLayoutManager::setLayout(int layout)
 {
-  Q_D(qMRMLLayoutManager);
-  if (this->layout() == layout)
+  Q_D(qMRMLLayoutManager);  if (this->layout() == layout)
     {
     return;
     }
