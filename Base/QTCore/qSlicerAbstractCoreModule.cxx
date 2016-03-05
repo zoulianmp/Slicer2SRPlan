@@ -283,6 +283,7 @@ vtkMRMLAbstractLogic* qSlicerAbstractCoreModule::logic()
     return d->Logic;
     }
   // Attempt to create a logic object
+
   d->Logic.TakeReference(this->createLogic());
 
   // If createLogic return a valid object, set its Scene and AppLogic

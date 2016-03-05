@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 2.8.9)
 
 cmake_policy(SET CMP0048 NEW)
 
-
+#set(CMAKE_DEBUG_POSTFIX d) Loadable Module is a problem
 
 
 #-----------------------------------------------------------------------------

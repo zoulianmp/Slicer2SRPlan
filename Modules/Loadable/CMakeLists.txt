@@ -44,4 +44,10 @@ foreach(module ${qtmodules})
   endif()
 endforeach(module)
 
+
+
+#Code by ZouLian for Debug
+#add_subdirectory(Colors)
+
+
 # External modules have been moved to Modules/Remote/CMakeLists.txt

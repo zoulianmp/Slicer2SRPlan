@@ -685,7 +685,7 @@ void qSlicerApplication::setupFileLogging()
 
   // Add new log file path for the current session
   QString tempDir = this->temporaryPath();
-  QString currentLogFilePath = tempDir + QString("/Slicer_") +
+  QString currentLogFilePath = tempDir + QString("/SRPlan_") +
     this->repositoryRevision() + QString("_") +
     QDateTime::currentDateTime().toString("yyyyMMdd_hhmmss") +
     QString(".log");
@@ -725,7 +725,7 @@ void qSlicerApplication::displayApplicationInformations() const
 
   QStringList titles = QStringList()
       << "Session start time "
-      << "Slicer version "
+      << "SRPlan version "
       << "Operating system "
       << "Memory "
       << "CPU "

@@ -186,6 +186,13 @@ void vtkMRMLColorLogic::AddDefaultColorNodes()
     vtkWarningMacro("vtkMRMLColorLogic::AddDefaultColorNodes: no scene to which to add nodes\n");
     return;
     }
+  //***********************
+  //Code for Debug by zoulian
+  this->GetDefaultLabelMapColorNodeID();
+
+
+  //End of Code for Debug by zoulian
+  //************************
 
   this->GetMRMLScene()->StartState(vtkMRMLScene::BatchProcessState);
 
