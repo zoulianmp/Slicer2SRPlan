@@ -1197,7 +1197,7 @@ QString qSlicerCoreApplication::launcherRevisionSpecificUserSettingsFilePath()co
 //-----------------------------------------------------------------------------
 QString qSlicerCoreApplication::slicerDefaultSettingsFilePath()const
 {
-  return this->slicerHome() + "/" SRPlan_SHARE_DIR "/" + this->applicationName() + "DefaultSettings.ini";
+    return this->slicerHome() + "/" SRPlan_SHARE_DIR "/" + this->applicationName() + "DefaultSettings.ini";
 }
 
 //-----------------------------------------------------------------------------

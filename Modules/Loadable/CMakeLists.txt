@@ -37,17 +37,19 @@ if(SRPlan_BUILD_DIFFUSION_SUPPORT)
     )
 endif()
 
-foreach(module ${qtmodules})
-  list(FIND SRPlan_QTLOADABLEMODULES_DISABLED ${module} _module_disabled)
-  if(${_module_disabled} STREQUAL "-1")
-    add_subdirectory(${module})
-  endif()
-endforeach(module)
+#foreach(module ${qtmodules})
+#  list(FIND SRPlan_QTLOADABLEMODULES_DISABLED ${module} _module_disabled)
+#  if(${_module_disabled} STREQUAL "-1")
+#    add_subdirectory(${module})
+#  endif()
+#endforeach(module)
 
 
 
 #Code by ZouLian for Debug
-#add_subdirectory(Colors)
+add_subdirectory(SlicerWelcome)
+add_subdirectory(Colors)
+#EndCode by ZouLian for Debug
 
 
 # External modules have been moved to Modules/Remote/CMakeLists.txt
