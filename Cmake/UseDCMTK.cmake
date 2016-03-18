@@ -103,8 +103,15 @@ include_directories(${DCMTK_INCLUDE_DIRS})
 
 
 
+#set dcmtk libs 
+set(DCMTK_LIBRARY_DIRS "${PACKAGE_PREFIX_DIR}/lib/" )
 
-set(DCMTK_LIBRARY_DIRS "${PACKAGE_PREFIX_DIR}/lib" )
+
+
+
+SET(DCMTK_dcmdata_LIBRARY "${DCMTK_LIBRARY_DIRS}/dcmdata.lib")
+
+
 
 
 # Add link directories needed to use VTK.

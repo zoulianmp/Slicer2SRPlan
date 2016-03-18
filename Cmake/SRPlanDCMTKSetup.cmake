@@ -25,9 +25,23 @@
 
 
 
-SET(DCMTK_ROOT_DIR "C:/BaseLibsInstall/DCMTK" CACHE PATH "DCMTK Package Root Path" FORCE)
+SET(DCMTK_ROOT_DIR "C:/BaseLibsInstall/DCMTK" CACHE PATH "DCMTK Package Root Path contain DCMTKConfig.cmake" FORCE)
 
-#find_package(DCMTK )
 
-include(UseDCMTK)
 
+include(${DCMTK_ROOT_DIR}/cmake/DCMTKConfig.cmake)
+
+
+
+# Set This Following Values for Other Modules required by ITK,and other libs
+
+set(DCMTK_LIBRARY_DIRS "${DCMTK_ROOT_DIR}/lib" )
+
+SET(DCMTK_dcmdata_LIBRARY "${DCMTK_LIBRARY_DIRS}/dcmdata.lib")
+SET(DCMTK_ofstd_LIBRARY "${DCMTK_LIBRARY_DIRS}/ofstd.lib")
+SET(DCMTK_dcmimgle_LIBRARY "${DCMTK_LIBRARY_DIRS}/dcmimgle.lib")
+
+include_directories (${DCMTK_INCLUDE_DIRS})
+
+
+#DCMTK_LIBRARIES
